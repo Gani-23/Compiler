@@ -10,7 +10,7 @@ jobs:
   bash_hello_requirement:
     runs-on: ubuntu-22.04
     steps:
-      - run: sudo apt install python -y
+      - run: sudo apt install python3 -y
   bash_hello:
     needs: bash_hello_requirement
     runs-on: ubuntu-22.04

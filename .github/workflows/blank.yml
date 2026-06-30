@@ -16,5 +16,6 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - run: print("hello after completing requirement")
+        shell: python3
       
         

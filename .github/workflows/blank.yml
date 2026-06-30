@@ -1,0 +1,20 @@
+name: clean up
+
+on: workflow_dispatch
+
+jobs:
+  inline_shell:
+    runs-on: ubuntu-24.04
+    steps:
+      - run: echo "hello world"
+  bash_hello_requirement:
+    runs-on: ubuntu-22.04
+    steps:
+      - run: sudo apt install python -y
+  bash_hello:
+    needs: bash_hello_requirement
+    runs-on: ubuntu-22.04
+    steps:
+      - run: print("hello after completing requirement")
+      
+        

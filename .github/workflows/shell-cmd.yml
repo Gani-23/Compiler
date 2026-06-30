@@ -1,7 +1,7 @@
 name: learning ci/cd workflow complete challenge
 
 on:
-  workflow-dispatch:
+  workflow_dispatch:
 
 jobs:
   job-1:

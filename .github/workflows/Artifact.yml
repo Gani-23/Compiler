@@ -11,7 +11,7 @@ jobs:
       - name: upload artifact
         uses: actions/upload-artifact@v7.0.1
         with:
-          name: example.txt
+          name: example-artifact
           path: artifact.txt
   
   download_artifact:

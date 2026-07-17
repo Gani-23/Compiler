@@ -1,0 +1,12 @@
+name: conglamatory-artifact
+on: workflow_dispatch
+
+jobs:
+  buiding-app:
+    runs-on: ubuntu-22.04^
+    steps:
+      - name: cloning repository
+        uses: actions/checkout@v7.0.0
+        with:
+          repository: Gani-23/Agent-Buddy
+          
